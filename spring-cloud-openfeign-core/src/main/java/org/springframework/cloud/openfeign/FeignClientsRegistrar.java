@@ -230,7 +230,7 @@ class FeignClientsRegistrar
 		validate(attributes);
 		definition.addPropertyValue("url", getUrl(attributes));
 		definition.addPropertyValue("path", getPath(attributes));
-		String name = getName(attributes);
+		String name = getClientName(attributes);
 		definition.addPropertyValue("name", name);
 		String contextId = getContextId(attributes);
 		definition.addPropertyValue("contextId", contextId);
